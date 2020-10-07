@@ -1,44 +1,54 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Trackify
 
-## Available Scripts
+### Open source & user friendly IP tracker.
 
-In the project directory, you can run:
+**Trackify** provides you geoinformation of any ip you want to, with a very friendly UI.
 
-### `yarn start`
+Also, is open source. You can view all the code of this projecy, and also contribute to itself.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+## Usage
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To use this app, you just have to visit the website *[website link]*.
 
-### `yarn build`
+Or
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Clone this repo.
+* Install all the necessary packages.
+* Run the app.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+To do all this steps, please follow the next guide.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> You've need to have installed *nodejs, git, yarn*.
 
-### `yarn eject`
+#### Clone repo.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To clone a repo, put the next command.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`git clone https://github.com/stylessh/trackify.git`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This downloads for you a folder called **trackify**, this one contains the source code of the project.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### Install packages.
 
-## Learn More
+Then, you need to install all required packages that app use.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+First, get inside the folder.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+`cd /path/to/trackify`
+
+Now you can run the following command.
+
+`yarn install`
+
+> If you don't have *yarn* installed, please run the following command before.
+
+`npm i yarn -g`
+
+
+#### Running the app
+
+All you have to do run this app is run the following command inside the folder project.
+
+`yarn start`
