@@ -1,0 +1,27 @@
+@import "../../global/variables.scss";
+
+.track-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 1em 2em;
+
+  ul {
+    list-style: none;
+
+    h3 {
+      position: relative;
+
+      &::after {
+        display: block;
+        content: "";
+        height: 1px;
+        width: 100px;
+        margin: 0.5em 0;
+
+        background: $cream;
+      }
+    }
+  }
+}

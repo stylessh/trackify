@@ -10,9 +10,17 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "axios": "^0.20.0",
+    "mapbox-gl": "^1.12.0",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
+    "react-animated-css": "^1.2.1",
     "react-dom": "^16.13.1",
+    "react-loading": "^2.0.3",
+    "react-mapbox-gl": "^4.8.6",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "react-toastify": "^6.0.8",
     "typescript": "~3.7.2"
   },
   "scripts": {
@@ -35,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-router-dom": "^5.1.5"
   }
 }

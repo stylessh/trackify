@@ -1,0 +1,79 @@
+// assets
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Raleway&display=swap");
+@import "global/variables.scss";
+
+// general styles
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  background: $black;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $cream;
+
+  &:active {
+    background: darken($color: $cream, $amount: 5);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $titles;
+  font-weight: 700;
+}
+
+p,
+span,
+a,
+li,
+input,
+textarea {
+  font-family: $body;
+  font-weight: 400;
+}
+
+.toast {
+  background: $cream;
+  color: $black;
+
+  font-family: $body;
+}
+
+.lg-title {
+  font-size: 58px;
+  line-height: auto;
+}
+
+.md-title {
+  font-size: 41px;
+  line-height: auto;
+}
+
+.sm-title {
+  font-size: 25px;
+  line-height: auto;
+}
+
+.lg-body {
+  font-size: 21px;
+}
+
+.md-body {
+  font-size: 18px;
+}

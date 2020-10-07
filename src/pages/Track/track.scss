@@ -1,0 +1,115 @@
+@import "../../global/variables.scss";
+
+.track {
+  display: grid;
+  grid-template-rows: repeat(2, 100vh);
+
+  .top {
+    align-self: center;
+
+    h1 {
+      text-align: center;
+    }
+
+    .track-form {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin: 2em auto;
+      width: auto;
+
+      display: flex;
+      justify-content: center;
+
+      .track-input {
+        position: relative;
+
+        input {
+          border: none;
+          background: $cream;
+          color: $very-dark-black;
+
+          box-shadow: 0px 5px 20px rgba($color: $cream, $alpha: 0.8);
+
+          border-radius: 8px;
+          width: 500px;
+          padding: 1em;
+        }
+
+        .tip {
+          position: absolute;
+          left: 0.5em;
+          bottom: -1.5em;
+
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      button {
+        border: none;
+        border-radius: 8px;
+        color: $gray;
+        background: $black;
+
+        cursor: pointer;
+        box-shadow: 0px 5px 15px rgba($color: $very-dark-black, $alpha: 0.25);
+
+        margin-left: 1em;
+        padding: 1em 2em;
+
+        img {
+          font-size: 28px;
+        }
+
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          background: lighten($color: $black, $amount: 5);
+        }
+      }
+
+      &.alt-form {
+        position: fixed;
+        top: 0;
+        margin: 2em;
+        left: 30%;
+        z-index: 9999 !important;
+
+        opacity: 1;
+
+        .tip {
+          display: none;
+        }
+
+        .track-input {
+          input {
+            box-shadow: none;
+          }
+        }
+
+        button {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  .tracker {
+    position: relative;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 1fr;
+
+    .spinner-container {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
