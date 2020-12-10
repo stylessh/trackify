@@ -113,3 +113,39 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .track {
+    .top {
+      h1 {
+        font-size: 2em;
+        margin: 1em 0;
+      }
+
+      .track-form {
+        width: 90%;
+
+        margin: 0 auto;
+
+        .track-input {
+          input {
+            width: 100%;
+          }
+        }
+
+        &.alt-form {
+          left: 0;
+          right: 0;
+
+          margin: 2em auto;
+        }
+      }
+    }
+
+    .tracker {
+      grid-template-columns: 1fr;
+
+      grid-template-rows: repeat(2, 100vh);
+    }
+  }
+}
