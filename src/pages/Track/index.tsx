@@ -34,7 +34,7 @@ const Track: FC = () => {
     window.addEventListener("scroll", () => {
       const scroll: number = watchScroll();
 
-      if (scroll >= window.innerHeight - 20) {
+      if (scroll >= window.innerHeight) {
         form.classList.add("alt-form");
       } else {
         form.classList.remove("alt-form");

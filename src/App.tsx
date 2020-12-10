@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Navbar from "components/Navbar";
 import Track from "pages/Track";
+import Home from "pages/Home";
 
 import "./App.scss";
 
@@ -12,7 +13,7 @@ const App: FC = () => {
       <Navbar />
 
       <Switch>
-        <Route path="/" exact render={() => <h1>Hola</h1>} />
+        <Route path="/" exact render={() => <Home />} />
         <Route path="/track" exact render={() => <Track />} />
       </Switch>
     </Router>

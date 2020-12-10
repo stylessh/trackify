@@ -1,9 +1,10 @@
-export const scrollToRef = (ref: any) =>
+export const scrollToRef = (ref: any) => {
   window.scrollTo({
     top: ref.current.offsetTop,
     left: 0,
     behavior: "smooth",
   });
+};
 
 export const watchScroll = () => {
   var scrollTop: number =
